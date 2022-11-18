@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a {
+   color: inherit;
+   text-decoration: none;
+}
+img {
+vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+input,
+button,
+textarea {
+   font-weight: inherit;
+   font-size: inherit;
+}
+button {
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
+}
+html,
+body{
+   height: 100%;
+}
+body {
+   line-height: 1;
+}
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+.painting{
+      background:url("../img/sky.png") 0 0/cover no-repeat;      
+}
+.painting__container{
+   width: 2000px;
+   margin: 0 auto;
+   padding-top: 200px;
+}
+.sky__stars{
+width: 60px;
+height: 60px;
+border: 1px solid white;
+border-radius: 60px;
+background:rgb(206,219,233);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(97,153,199,1) 50%, rgba(58,132,195,1) 51%, rgba(65,154,214,1) 59%, rgba(75,184,240,1) 71%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); 
+background: radial-gradient(ellipse at center,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 ); 
+} 
+ .sky__stars--one {
+   width: 80px;
+   height: 80px;
+   border-radius: 80px; 
+}
+
+.sky__stars--two {
+   transform: translate(150px, 400px);
+   width: 150px;
+   height: 150px;
+   border-radius: 150px; 
+}
+.sky__stars--three {
+   width: 95px;
+   height: 95px;
+   border-radius: 95px;
+   transform: translateX(550px);
+}
+.sky__stars--four {
+   transform: translateX(1000px);
+}
+.sky__stars--five {
+   transform: translate(800px, 200px);
+}
+.sky__stars:hover{
+   transform: translate(100px);
+   box-shadow: 60px 60px 10px 5px white, -60px -60px 10px 5px rgb(188, 188, 229);
+   transition: all 5s ease 0s; 
+}
+.top-part__cosmo{
+   background:url("../img/cosmo.png") 0 0 no-repeat;
+   width: 200px;
+   height: 200px;
+   position: relative;
+   left: 1500px;
+}
+.top-part__cosmo:hover{
+   transform: scale(5);
+   transition: all 10s ease 0s;
+}
+.top-part__moon {
+   background: url("../img/moon.png") 0 0 repeat;
+   width: 1400px;
+   height: 1400px;
+}
+.top-part__moon:hover{
+   transform: translate(1000px, 10px) rotate(360deg);
+   transition: all 15s ease 0s;
+   position: relative;
+   z-index: 100;
+}
+.top-part__men{
+   background: url("../img/men.png") 0 0 no-repeat;
+   width: 1500px;
+   height: 1500px;
+   position: relative;
+   top: 0px;
+   right: 0px;
+   margin-bottom: 500px;
+}
+.top-part__men:hover{
+   transform: translate(70px,70px);
+   transition: all 10s ease 0s;
+}
+.middle-part__men2{
+   background: url("../img/men2.png") 0 0 no-repeat;
+   width: 800px;
+   height: 800px;
+   margin-left: 500px;
+   margin-bottom: 500px;
+}
+.middle-part__men2:hover{
+   transform: rotate(360deg);
+   transition: all 10s ease 0s;
+}
+.funnel{
+   background: url("../img/funnel.png") 0 0 no-repeat;
+   width: 700px;
+   height: 700px;
+   perspective: 300px;
+   perspective-origin: center;
+   margin-left: 500px;
+   margin-bottom: 800px;
+}
+.funnel:hover{
+   transform: scale(3) rotate(360deg);
+   transition: all 10s ease 0s;
+}
+ .funnel__men3{
+   background: url("../img/men3.png");
+   width: 900px;
+   height: 900px; 
+} 
+.funnel__men3:hover{
+   transform: scale(0) rotate(360deg);
+   transition: all 10s ease 0s;
+}
+.planet {
+   background: url("../img/planett.png") 0 0 no-repeat;
+   width: 1000px;
+   height: 1000px;
+   transform: translateX(800px);
+   perspective: 200px;
+   transform-style: preserve-3d;
+   margin-bottom: 500px;
+}
+.planet__back-side {
+   background: url("../img/planettt.png") 0 0 no-repeat;
+   width: 1000px;
+   height: 1000px;
+   transform: rotateY(180deg);
+   transition: all 3s ease 0s;
+}
+.planet:hover .planet__back-side{
+   transform: rotateY(0deg);
+}
+.planet__back-side{
+   backface-visibility: hidden;
+}
+.last-part{
+   padding-bottom: 500px;
+}
+.last-part__word {
+   background: url("../img/word.png") 0 0 no-repeat;
+   width: 1000px;
+   height: 1000px;
+   margin-bottom: 700px;
+   margin-left: 600px;
+}
+.last-part__word:hover{
+   transform: rotate(360deg);
+   transition: all 7s ease 0s;
+}
+ .last-part__women {
+   background:url("../img/women.png") 0 0 no-repeat;
+   width: 800px;
+   height: 800px;
+   transform: scale(0.2);
+} 
+.last-part__women:hover{
+   transform: scale(2);
+   transition: all 7s ease 0s;
+}
+.milk {
+   perspective: 300px;
+   perspective-origin: center;
+   transform: translateX(400px);
+}
+.milk__way {
+   background: url("../img/milky-way.png") 0 0 no-repeat;
+   width: 1000px;
+   height: 1000px;
+   transform: rotateX(50deg);
+   padding-bottom: 500px;
+}  
+.milk__way:hover{
+   transform: rotate(-360deg) scale(2);
+   transition: all 3s ease 0s;
+}
